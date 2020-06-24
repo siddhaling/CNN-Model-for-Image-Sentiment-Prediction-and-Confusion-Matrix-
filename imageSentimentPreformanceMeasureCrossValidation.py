@@ -11,8 +11,8 @@ from keras.layers import Conv2D, MaxPooling2D, AveragePooling2D, Dense, Activati
 from keras.optimizers import sgd
 from sklearn.model_selection import StratifiedKFold
 
-imPath='I:\\dataSet\\sentimentImages\\Twitter_Dataset\\twitter\\partition1\\'
-grndTruthPath='I:\\dataSet\\sentimentImages\\Twitter_Dataset\\twitter\\'
+imPath='images'# set the path here to images folder
+grndTruthPath='groundTruthLabel.txt'
 
 #Required dimension of the input images
 imageDim=(256,256)
@@ -24,7 +24,7 @@ numOfClasses = 2
 dirs=os.listdir(imPath)
 #Create a data frame consisting of grpund truth values
 clNames=['Image','Sentiment']
-clsLabels=pd.read_csv(grndTruthPath+'groundTruthLabel.txt',names=clNames,delimiter='\t')
+clsLabels=pd.read_csv(grndTruthPath,names=clNames,delimiter='\t')
 clsLabels.set_index('Image',inplace=True)
 
 #read images from given paths and prepare images set
