@@ -23,6 +23,8 @@ A data frame 'performanceTb' is created to store true positive, false positive, 
 
 Please set the imPath to the folder consisting of images seperated by two backslash
 For example: c:\\images\\
+A sample of images are kept here, please see the below link for complete image set.
+http://www.ee.columbia.edu/ln/dvmm/vso/download/twitter_dataset.html
 
 Further Projects and Contact
 www.researchreader.com
